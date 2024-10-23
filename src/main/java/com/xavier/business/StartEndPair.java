@@ -10,7 +10,14 @@ import lombok.Data;
 @Data
 public class StartEndPair {
 
+	/**
+	 * 开始游标
+	 */
 	public long start;
+
+	/**
+	 * 结束游标
+	 */
 	public long end;
 
 	@Override

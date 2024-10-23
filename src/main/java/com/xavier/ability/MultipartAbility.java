@@ -19,6 +19,11 @@ import java.io.RandomAccessFile;
 @Component
 public class MultipartAbility {
 
+    /**
+     * 文件类型转换
+     * @param file
+     * @return
+     */
     public File covert(MultipartFile file) {
         CommonsMultipartFile commonsMultipartFile = (CommonsMultipartFile) file;
         DiskFileItem diskFileItem = (DiskFileItem) commonsMultipartFile.getFileItem();

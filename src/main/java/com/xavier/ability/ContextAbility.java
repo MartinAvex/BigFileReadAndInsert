@@ -14,7 +14,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @description: 上下文
+ * @description: 应用上下文
  * @author: ex_wuzr11
  * @date: 2024/10/22 17:01
  */
@@ -24,6 +24,11 @@ public class ContextAbility {
     @Resource
     private MultipartAbility multipartAbility;
 
+    /**
+     * 初始化上下文
+     * @param file
+     * @return
+     */
     public StandardContext init(MultipartFile file) {
         try {
             File covert = multipartAbility.covert(file);

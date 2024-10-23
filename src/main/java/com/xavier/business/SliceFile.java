@@ -12,8 +12,19 @@ import lombok.Data;
 @Builder
 public class SliceFile {
 
+    /**
+     * 开始位置
+     */
     private Long start;
+
+    /**
+     * 每次读取长度
+     */
     private Long sliceSize;
+
+    /**
+     * 每次读取缓存大小
+     */
     private byte[] readBuffer;
 
     public static SliceFile build(StartEndPair startEndPair) {
